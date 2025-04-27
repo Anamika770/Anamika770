@@ -7,8 +7,6 @@
 
 - 📫 How to reach me **anamikamuskan82@gmail.com**
 
-- ⚡ Fun fact **I like to play with kids**
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
