@@ -1,7 +1,6 @@
 <h1 align="center">Hi 👋, I'm Anamika Srivastava</h1>
 <h3 align="center">A passionate Web Developer from India</h3>
 
-  <img align="center" alt="gif" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjVybTIwZTM2NmszYnVuOHh4Nmc0bzBiNnRvYjR3N2w4eHJhc3UzNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/NgurY1o4z080Jfoyzw/giphy.gif" >
 
 - 🌱 I’m currently learning **React.js**
 
