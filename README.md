@@ -7,6 +7,14 @@
 
 - 📫 How to reach me **anamikamuskan82@gmail.com**
 
+## 📊 My GitHub Stats
+
+![Anamika's GitHub stats](https://github-readme-stats.vercel.app/api?username=Anamika770&show_icons=true&theme=tokyonight)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Anamika770&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Anamika770&layout=compact&theme=tokyonight)
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
