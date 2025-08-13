@@ -2,8 +2,8 @@ name: Update GitHub Contribution Heatmap
 
 on:
   schedule:
-    - cron: "0 0 * * *" # every day at midnight UTC
-  workflow_dispatch: # allow manual trigger
+    - cron: "0 0 * * *" # Runs every day at midnight UTC
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,29 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Fetch contributions graph
+        uses: yoshi389111/github-contribution-grid-snake@master
         with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4
-
-      - name: Download GitHub heatmap
-        run: |
-          python - <<'EOF'
-          import requests
-          from bs4 import BeautifulSoup
-
-          username = "Anamika770"
-          url = f"https://github.com/users/{username}/contributions"
-          r = requests.get(url)
-          soup = BeautifulSoup(r.text, "html.parser")
-
-          svg = soup.find("svg")
-          with open("heatmap.svg", "w", encoding="utf-8") as f:
-              f.write(str(svg))
-          EOF
+          github_user_name: Anamika770
+          svg_out_path: heatmap.svg
 
       - name: Commit and push changes
         run: |
