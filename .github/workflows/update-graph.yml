@@ -1,9 +1,9 @@
-name: Update GitHub Contribution Heatmap
+name: Update Dark GitHub Contribution Heatmap
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs every day at midnight UTC
-  workflow_dispatch:
+    - cron: "0 0 * * *" # runs every day at midnight UTC
+  workflow_dispatch: # allow manual run
 
 jobs:
   build:
@@ -13,16 +13,42 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Fetch contributions graph
-        uses: yoshi389111/github-contribution-grid-snake@master
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          github_user_name: Anamika770
-          svg_out_path: heatmap.svg
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Download and style heatmap (dark theme)
+        run: |
+          python - <<'EOF'
+          import requests
+          from bs4 import BeautifulSoup
+
+          username = "Anamika770"
+          url = f"https://github.com/users/{username}/contributions"
+          r = requests.get(url)
+          soup = BeautifulSoup(r.text, "html.parser")
+          svg = soup.find("svg", {"class": "js-calendar-graph-svg"})
+
+          if svg:
+              # Add dark background
+              svg['style'] = "background-color:#0d1117; color:white;"
+
+              # Change month/day text color to white
+              for text in svg.find_all("text"):
+                  text['fill'] = "#ffffff"
+
+              with open("heatmap.svg", "w", encoding="utf-8") as f:
+                  f.write(str(svg))
+          EOF
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add heatmap.svg
-          git commit -m "Update GitHub contribution heatmap"
+          git commit -m "Update dark theme GitHub contribution heatmap" || echo "No changes"
           git push
