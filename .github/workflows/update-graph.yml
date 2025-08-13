@@ -15,7 +15,7 @@ jobs:
 
       - name: Download latest contribution graph
         run: |
-          curl "https://github-readme-activity-graph.vercel.app/graph?username=YourUserName&bg_color=0d1117&color=ffffff&line=00ff00&point=00ff00&area=true&hide_border=true" -o contributions.svg
+          curl "https://github-readme-activity-graph.vercel.app/graph?username=Anamika770&bg_color=0d1117&color=ffffff&line=40c463&point=40c463&area=true&hide_border=true" -o contributions.svg
 
       - name: Commit and push changes
         run: |
@@ -23,4 +23,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add contributions.svg
           git commit -m "Update GitHub contribution graph"
-          git push
+          gi
