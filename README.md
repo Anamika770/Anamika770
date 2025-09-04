@@ -18,7 +18,8 @@
 
 
 
-![GitHub Dark Contribution Heatmap](heatmap.svg?v=1757003044?v=1757003044)
+![GitHub Dark Contribution Heatmap](heatmap.svg?v=1)
+
 
 
 
