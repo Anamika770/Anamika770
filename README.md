@@ -21,8 +21,6 @@
 ![GitHub Dark Contribution Heatmap](heatmap.svg)
 
 
-[![Anamika's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Anamika770&bg_color=0d1117&color=ffffff&line=00ff00&point=00ff00&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=anamika770&show_icons=true&locale=en&layout=compact" alt="anamika770" /></p>
 
