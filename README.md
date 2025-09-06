@@ -20,7 +20,7 @@
 ## 📊 My GitHub Contribution Heatmap  
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Anamika770/Anamika770/main/heatmap.svg?v=1757033776?v=1757033776" alt="GitHub Dark Contribution Heatmap"/>
+  <img src="https://raw.githubusercontent.com/Anamika770/Anamika770/main/heatmap.svg?v=1757120095?v=1757120095?v=1757033776" alt="GitHub Dark Contribution Heatmap"/>
 </p>
 
 
