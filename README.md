@@ -2,7 +2,7 @@
 <h3 align="center">A Fullstack Web developer from India</h3>
 
 
-- 🌱 I’m currently learning **Nodejs**
+- 🌱 I’m currently learning **Backend**
 
 - 💬 Ask me about **react, javascript**
 
